@@ -71,7 +71,7 @@ a_text = a_text.translate(table)
 # a_text = re.sub(r'\s+', '', a_text)    # これは複数の連続する空白を1つに置換する
 
 
-#
+# 正規表現で括弧の中身を消す
 a_text = re.sub(r'\(.+?\)', '', a_text)
 a_text = re.sub(r'【.+?】', '', a_text)
 
