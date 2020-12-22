@@ -1,0 +1,94 @@
+% kenkyukai_template.tex を編集
+
+%\documentstyle[epsf,twocolumn]{jarticle}       %LaTeX2.09仕様
+\documentclass[twocolumn]{jarticle}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  基本 バージョン
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\topmargin}{-45pt}
+%\setlength{\oddsidemargin}{0cm}
+\setlength{\oddsidemargin}{-7.5mm}
+%\setlength{\evensidemargin}{0cm}
+\setlength{\textheight}{24.1cm}
+%setlength{\textheight}{25cm}
+\setlength{\textwidth}{17.4cm}
+%\setlength{\textwidth}{172mm}
+\setlength{\columnsep}{11mm}
+
+
+%【節がかわるごとに(1.1)(1.2) …(2.1)(2.2)と数式番号をつけるとき】
+%\makeatletter
+%\renewcommand{\theequation}{%
+%\thesection.\arabic{equation}} %\@addtoreset{equation}{section}
+%\makeatother
+
+%\renewcommand{\arraystretch}{0.95} 行間の設定
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}   %pLaTeX2e仕様(要\documentstyle ->\documentclass)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\twocolumn[
+\noindent
+
+\hspace{1em}
+
+情報工学実験I\hspace{-.1em}I
+\hfill
+\ \ B3 多田 瑞葵
+
+
+\vspace{2mm}
+
+\hrule
+
+\begin{center}
+{\Large \bf タイトル}
+\end{center}
+
+
+\hrule
+\vspace{3mm}
+]
+
+\section{はじめに}
+文章の生成をしたいのでとりあえず二値分類から始める．
+BERT が賢すぎて嬉しい．
+
+\section{要素技術}
+% 要素技術と従来手法をあわせて要素技術
+  \subsection{BERT}
+  BERT\cite{DBLP} は Transformer による双方向のエンコーダーである．2008 年 10 月に Google の Jacob Devlin らの論文で発表された自然言語処理モデルである．
+  \par
+  使うのはたぶん東北大 BERT だと思います．[MASK] をかけることで，そこの単語を予測してくれます．そもそも BERT は二種類の事前学習をしていて，単語の予測と文の関係性の予測の二つを勉強していて，それによってとても賢いです．今回はその単語の予測の部分を使うのですが，事前学習とタスクが同じなので，ファインチューニングが不要ですか...？（何もわかっていない顔）
+  \subsection{MeCab}
+  分かち書きをしてくれました．ありがとう．形態素解析で助詞とか名詞とかを抽出して [MASK] をかけるのに使います．
+
+\section{実験手法}
+% 従来手法があるなら提案手法とする
+今回は，助詞に [MASK] をかけて，そこに入る単語が主格かどうかを判定してもらいます．他には，特定の品詞に [MASK] をかけて，それがその品詞かどうかを判定できたら嬉しいです．
+
+\section{数値実験}
+  \subsection{実験１}
+  パラメータがからころちん
+
+  \subsection{実験結果}
+  実験結果が出ればここに書けますが，でなければ書けません．
+
+  \subsection{考察}
+  うーん，ばなな！
+
+\section{まとめと今後の課題}
+これからも頑張りたいです，まる．
+
+
+% 参考文献出力
+\bibliography{index}
+\bibliographystyle{unsrt}
+
+
+\end{document}

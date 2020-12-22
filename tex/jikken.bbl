@@ -1,0 +1,9 @@
+\begin{thebibliography}{1}
+
+\bibitem{DBLP}
+Jacob Devlin, Ming{-}Wei Chang, Kenton Lee, and Kristina Toutanova.
+\newblock {BERT:} pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock {\em CoRR}, abs/1810.04805, 2018.
+
+\end{thebibliography}
