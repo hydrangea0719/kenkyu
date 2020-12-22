@@ -85,6 +85,7 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tf
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT ./jikken.bbl
 INPUT jikken.bbl
 INPUT ./jikken.bbl

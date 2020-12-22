@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.euc) (TeX Live 2020) (preloaded format=platex 2020.10.13)  22 DEC 2020 20:03
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.euc) (TeX Live 2020) (preloaded format=platex 2020.10.13)  22 DEC 2020 21:19
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -82,9 +82,9 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 56.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 64.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 69.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 64.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 69.
  (./jikken.bbl
 LaTeX Font Info:    Kanji font shape `JY1/gt/m/it' undefined
 (Font)              No change on input line 7.
@@ -98,12 +98,12 @@ Underfull \hbox (badness 1005) in paragraph at lines 4--8
 
 ] (./jikken.aux) ) 
 Here is how much of TeX's memory you used:
- 839 strings out of 480388
- 13232 string characters out of 5895034
- 291492 words of memory out of 5000000
- 17678 multiletter control sequences out of 15000+600000
- 541441 words of font info for 55 fonts, out of 8000000 for 9000
+ 842 strings out of 480388
+ 13268 string characters out of 5895034
+ 294492 words of memory out of 5000000
+ 17680 multiletter control sequences out of 15000+600000
+ 541776 words of font info for 56 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 60i,4n,66p,363b,225s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,4n,66p,380b,225s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on jikken.dvi (1 page, 3424 bytes).
+Output written on jikken.dvi (1 page, 4344 bytes).
