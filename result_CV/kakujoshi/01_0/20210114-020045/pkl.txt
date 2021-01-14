@@ -1,0 +1,4 @@
+train_acc.pkl	[0.6363888888888889]
+train_loss.pkl	[0.2978670591286694]
+val_acc.pkl	[0.83]
+val_loss.pkl	[0.19097942802951567]
