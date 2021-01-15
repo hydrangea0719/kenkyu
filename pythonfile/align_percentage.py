@@ -1,14 +1,16 @@
 
+# ラベルごとのデータの数を等しくします
+
 
 import numpy as np
 import random
 import collections
 
 
-tmp1 = ['2008', '2009', '2010', '2011', '2012']
-tmp2 = ['01', '02', '03']
-# tmp1 = ['2009']
-# tmp2 = ['02']
+# tmp1 = ['2008', '2009', '2010', '2011', '2012']
+# tmp2 = ['01', '02', '03']
+tmp1 = ['2008']
+tmp2 = ['01']
 
 print('--- kaiseki suruyo ---')
 
@@ -18,7 +20,6 @@ for year in tmp1:
 
         # ファイルの準備をしてね
         filename = 'mai' + year + '_' + page
-
         path_r = './dataset_mask/kakujoshi/' + filename + '_mask_kakujoshi' + '.txt'
         path_w = './dataset_align/kakujoshi/' + filename + '.txt'
         # path_r = './short/mai2008_01_short_mask_kakujoshi.txt'
@@ -54,8 +55,10 @@ for year in tmp1:
                 label.append(label_tmp)
                 data.append(data_tmp)
 
-
+            # ラベルの種類を数える
             c = collections.Counter(label)
+
+            # 各ラベルと，そのデータがいくつあるかを表示する
             # print(c)
 
             for i in range(len(c)):

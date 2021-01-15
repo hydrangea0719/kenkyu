@@ -44,7 +44,8 @@ for a in input_file:
     text += a
 
 
-file_output = open("mai2008_01_segmented.txt", 'w')
+file_output1 = open("mai2008_01_short_watati.txt", 'w')
+file_output2 = open("mai2008_01_short_kaiseki.txt", 'w')
 
 # ここでいろいろやる
 # for a in text:
@@ -52,12 +53,17 @@ for a in text.split('\n'):
     # 形態素解析
     result = mecab_list(a)
     for line in result:
-        # 形態素だけを抽出
-        file_output.writelines(line[0])
-        # 半角スペース区切り
-        file_output.writelines(' ')
-    # 1文ごとに改行
-    file_output.writelines('\n')
+        # こっちはそのまま書き込み
+        file_output2.writelines(line)
+
+        # こっちは形態素だけを半角スペース区切りで抽出
+        file_output1.writelines(line[0])
+        file_output1.writelines(' ')
+
+    # 改行
+    file_output1.writelines('\n')
+    file_output2.writelines('\n')
+
 
 # 各行ごとに文章の構成単位に分解
 # items = (re.split('[\t]', line) for line in lines)
